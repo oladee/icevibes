@@ -1,3 +1,6 @@
+import Image from "next/image"
+import fun1 from "../assets/fun1.svg"
+import fun2 from "../assets/fun2.svg"
 const Fun = () => {
   return (
     <div className="lg:py-[120px] lg:px-[8.33vw]">
@@ -9,8 +12,23 @@ const Fun = () => {
         We bring together the thrill of ice skating, the excitement of arcade gaming, and the energy of live entertainment into one unforgettable event. Over the course of a month, our venue will transform into a buzzing hub of activity, perfect for anyone looking to create magical memories this holiday season
         </p>
       </div>
-      <div className="lg:my-16 lg:py-9 bg-[#BBE4FF] border-t border-r-8 border-b-8 border-l-2 border-[#000] rounded-2xl">
-
+      <div className="lg:my-16 lg:py-9 lg:px-11 bg-[#BBE4FF] border-t border-r-8 border-b-8 border-l-2 border-[#000] rounded-2xl flex flex-col lg:flex-row lg:items-center lg:gap-9">
+        <div className="bg-[#7A33FF] border-t-[6px] border-r border-b border-l-[6px] border-[#000] rounded-2xl lg:py-9 lg:px-8 lg:w-[27.5vw]">
+        <h2 className="font-beachday lg:text-[3.33vw] text-white">
+        Fusion of fun
+        </h2>
+        <p className="font-switzer lg:text-[1.66vw] font-medium text-white">
+        At Icevibes, Our goal is to deliver a one-of-a-kind entertainment experience that combines creativity, inclusivity, and fun, ensuring there’s something for everyone to enjoy
+        </p>
+        </div>
+        <div className="flex lg:gap-9">
+         <div>
+         <Image src={fun1} alt=""/>
+         </div>
+         <div>
+         <Image src={fun2} alt="" className="hidden lg:block"/>
+         </div>
+        </div>
       </div>
     </div>
   )
