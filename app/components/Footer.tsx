@@ -31,7 +31,7 @@ const Footer = ()=>{
             <Image src={fb} alt="" />
         </div>
         <div>
-            <Image src='footerLogo' alt='' />
+            <Image src={footerLogo} alt='' />
         </div>
     </div>)
 }

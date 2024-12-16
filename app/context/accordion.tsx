@@ -1,4 +1,4 @@
-import { createContext, useState, Dispatch, useContext } from "react";
+import { createContext, useState, useContext } from "react";
 
 interface accordionProps {
     handleToggleAccord : (item : number | null)=> void, 
