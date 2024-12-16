@@ -17,8 +17,8 @@ export default {
         switzer: ['Switzer', 'sans-serif']
       },
       backgroundImage : {
-        herobg : "url('./assets/herobg.png')",
-        herobgmob : "url('./assets/herobgmob.png')"
+        herobg : "url('/herobg.png')",
+        herobgmob : "url('/herobgmob.png')"
       },
       backgroundPosition : {
         'bottom' : '2rem bottom 0.5rem'
