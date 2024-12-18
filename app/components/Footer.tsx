@@ -14,10 +14,10 @@ const Footer = ()=>{
                 Your browser does not support the video tag.
             </video>
         </div>
-        <div className="lg:px-16 lg:my-16">
-            <hr />
+        <div className=" my-6 lg:px-16 lg:my-16">
+            <hr className="border-[rgba(255,255,255,0.50)]" />
         </div>
-        <div className="text-white flex justify-center gap-3  my-3">
+        <div className="text-white flex flex-col lg:flex-row justify-center items-center gap-3  my-3">
             <Link href=''>
             About IceVibe
             </Link>
@@ -25,13 +25,13 @@ const Footer = ()=>{
             <Link href=''>
             </Link>
         </div>
-        <div className="flex justify-center gap-5">
-            <Image src={twitter} alt="" />
-            <Image src={insta} alt="" />
-            <Image src={fb} alt="" />
+        <div className="flex justify-center gap-5 mt-4 lg:mt-10">
+            <Image src={twitter} alt="" className="w-9 lg:w-auto"/>
+            <Image src={insta} alt="" className="w-9 lg:w-auto"/>
+            <Image src={fb} alt=""className="w-9 lg:w-auto" />
         </div>
-        <div>
-            <Image src={footerLogo} alt='' />
+        <div className="mt-11 lg:mt-16">
+            <Image src={footerLogo} alt='' className="opacity-20"/>
         </div>
     </div>)
 }
