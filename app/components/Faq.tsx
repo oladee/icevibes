@@ -67,7 +67,7 @@ export const Accordion = ({question, answer, idx, setAccordIdx, currentAccord, h
         <div className="lg:hidden">
             {
                 
-                (<div className={clsx("transition-all duration-500 max-h-0 overflow-hidden ", currentAccord == idx && 'max-h-[1000px] mt-3 py-9 lg:w-[34.09vw] px-8 border-r-8 border-b-8 border-t border-l border-[#000] rounded-2xl')}>
+                (<div className={clsx("transition-all duration-200 max-h-0 overflow-hidden ", currentAccord == idx && 'max-h-[1000px] mt-3 py-9 lg:w-[34.09vw] px-8 border-r-8 border-b-8 border-t border-l border-[#000] rounded-2xl')}>
                     <h2 className="text-[#7A33FF] lg:text-[32px] lg:py-8 bg-[#BBE4FF] text-center text-beachday rounded-3xl">
                         ANSWER
                     </h2>
