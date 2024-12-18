@@ -56,8 +56,8 @@ export const Accordion = ({question, answer, idx, setAccordIdx, currentAccord, h
         handleToggleAccord(idx)
     }
     return(<div>
-        <div className={clsx(`flex cursor-pointer items-center justify-between border-r-[6px] border-b-[6px] border-t border-l border-[#000] p-4 rounded-xl lg:w-[589px]`, currentAccord === idx && ` bg-[#7A33FF] border-[#FDAC18] text-white`)} onClick={handleclick}>
-            <h2 className={clsx(`text-[#000] lg:text-2xl`)}>
+        <div className={clsx(`flex cursor-pointer items-center justify-between border-r-[6px] border-b-[6px] border-t border-l border-[#000] p-4 rounded-xl lg:w-[589px] `, currentAccord === idx && ` bg-[#7A33FF] border-[#FDAC18]`)} onClick={handleclick}>
+            <h2 className={clsx(`text-[#000] font-medium lg:text-2xl`, currentAccord === idx && 'text-white')}>
                 {question}
             </h2>
             {
