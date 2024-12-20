@@ -3,10 +3,9 @@ import Image from "next/image"
 import fun1 from "../assets/fun1.svg"
 import fun2 from "../assets/fun2.svg"
 import fun3 from '../assets/fun3.svg'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import {Autoplay} from 'swiper/modules';
-import 'swiper/css';
-import "swiper/swiper-bundle.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay} from "swiper/modules";
+import "swiper/css";
 import "swiper/css/autoplay";
 
 
@@ -30,11 +29,10 @@ const Fun = () => {
         At Icevibes, Our goal is to deliver a one-of-kind entertainment experience that combines creativity, inclusivity, and fun, ensuring there’s something for everyone to enjoy
         </p>
         </div>
-        <Swiper className="flex justify-center lg:w-[53vw]" modules={[Autoplay]} breakpoints={
+        <Swiper className="w-full lg:w-[53vw]" modules={[Autoplay]} breakpoints={
           {
             320 : {
               slidesPerView : 1,
-              spaceBetween : 30,
             },
             700 : {
               slidesPerView : 1.5,
@@ -47,25 +45,24 @@ const Fun = () => {
           }
         }
         touchReleaseOnEdges={true}
-          autoplay={{
-            delay: 10000,
-          }}
+        autoplay={{
+          delay: 5000,
+        }}
         >
           <SwiperSlide>
             <div>
-            <Image src={fun1} alt="" className=""/>
+            <Image src={fun1} alt=""/>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <Image src={fun2} alt="" className=""/>
+              <Image src={fun2} alt=""/>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <Image src={fun3} alt="" className=""/>
+              <Image src={fun3} alt=""/>
             </div>
-          
           </SwiperSlide>
         </Swiper>
       </div>

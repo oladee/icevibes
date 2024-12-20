@@ -78,8 +78,8 @@ const Footer = ()=>{
             <video preload="auto" ref={videoRef} className="lg:h-[501px] lg:w-[69.44vw] object-cover rounded-xl" loop autoPlay muted={true} src="/video.mp4">
                 Your browser does not support the video tag.
             </video>
-            <div className="absolute bottom-0 right-24 cursor-pointer">
-                <Image src={isMuted ? speakerhigh : speakerlow} alt="" onClick={toggleMute}/>
+            <div className="absolute bottom-0 right-0 lg:right-28 cursor-pointer">
+                <Image src={isMuted ? speakerhigh : speakerlow} alt="" onClick={toggleMute} className="w-12 lg:w-auto"/>
             </div>
             
         </div>
@@ -100,7 +100,7 @@ const Footer = ()=>{
             <Image src={fb} alt=""className="w-9 lg:w-auto" />
         </div>
         <div className="mt-11 lg:mt-16 ">
-            <Image src={footerLogo} alt=''  className="opacity-60 md:w-[90%]  absolute left-5 md:left-16 lg:left-[8.33vw] bottom-10 lg:bottom-16"/>
+            <Image src={footerLogo} alt=''  className="opacity-60 w-[90%] md:w-[90%]  absolute left-8 md:left-16 lg:left-[8.33vw] bottom-10 lg:bottom-16"/>
         </div>
     </div>)
 }
