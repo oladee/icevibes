@@ -28,7 +28,7 @@ const Faq = ()=>{
             </div>
             {
                 <div className={clsx("hidden  max-h-0 overflow-hidden transition-all duration-700", FaqData[accordIdx] && ' lg:block max-h-[1000px] py-9 lg:w-[34.09vw] px-8 border-r-8 border-b-8 border-t border-l border-[#000] rounded-2xl')}>
-                <h2 className="text-[#7A33FF] lg:text-[32px] lg:py-8 bg-[#BBE4FF] text-center text-beachday rounded-3xl">
+                <h2 className="text-[#7A33FF] lg:text-[32px] lg:py-8 bg-[#BBE4FF] text-center font-beachday rounded-3xl">
                     ANSWER
                 </h2>
                 {
