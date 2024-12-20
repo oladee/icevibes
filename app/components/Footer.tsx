@@ -1,18 +1,87 @@
+'use client'
 import Image from "next/image"
 import Link from "next/link"
 import twitter from '../assets/twitter.svg'
 import footerLogo from '../assets/footerlogo.svg'
 import insta from '../assets/insta.svg'
 import fb from '../assets/fb.svg'
+import { useEffect, useRef, useState } from "react"
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import speakerlow from '../assets/speakerLow.svg'
+import speakerhigh from '../assets/speakerhigh.svg'
 
+
+gsap.registerPlugin(useGSAP);
 
 const Footer = ()=>{
-    return(<div className='bg-[#000] py-16 px-5 lg:py-[120px] lg:px-[8.33vw]'>
-        <div className="lg:px-20">
-            <video preload="none" poster='/poster.svg' className="">
-                <source src="/video.mp4" type="video/mp4" />
+    const videoRef = useRef<HTMLVideoElement>(null!)
+    const [isMuted, setIsMuted] = useState(false);
+    const element = videoRef.current
+    console.log(element)
+    const toggleMute = ()=>{
+        if (videoRef.current) {
+            videoRef.current.muted = !videoRef.current.muted;
+            setIsMuted(videoRef.current.muted); // Toggle mute
+          }
+        
+    }
+    useGSAP(()=>{
+        gsap.registerPlugin(ScrollTrigger);
+        
+          
+    })
+
+    useEffect(()=>{
+        if (!element) {
+            return;
+        }
+        ScrollTrigger.create({
+            trigger: element,
+            start: 'center 70%',
+            onLeave : ()=>{
+                if(!element?.paused){
+                    element?.pause()
+                    setIsMuted(false)
+                }
+                
+                
+            } ,
+            onLeaveBack : ()=>{
+                if(!element?.paused){
+                    element?.pause()
+                    setIsMuted(false)
+                }
+            } ,
+        });
+
+        ScrollTrigger.create({
+            trigger: element,
+            start: 'bottom 70%',
+            onEnter: ()=>{
+                element?.play()
+                setIsMuted(true)
+            },
+            
+            onEnterBack : ()=>{
+                element?.play()
+                setIsMuted(true)
+            } 
+            
+          });
+
+
+     })
+    return(<div className='bg-[#000] py-16 px-5 lg:py-[120px] lg:px-[8.33vw] relative'>
+        <div className="lg:px-20 relative">
+            <video preload="auto" ref={videoRef} className="lg:h-[501px] lg:w-[69.44vw] object-cover rounded-xl" loop autoPlay muted={true} src="/video.mp4">
                 Your browser does not support the video tag.
             </video>
+            <div className="absolute bottom-0 right-24 cursor-pointer">
+                <Image src={isMuted ? speakerhigh : speakerlow} alt="" onClick={toggleMute}/>
+            </div>
+            
         </div>
         <div className=" my-6 lg:px-16 lg:my-16">
             <hr className="border-[rgba(255,255,255,0.50)]" />
@@ -25,13 +94,13 @@ const Footer = ()=>{
             <Link href=''>
             </Link>
         </div>
-        <div className="flex justify-center gap-5 mt-4 lg:mt-10">
+        <div className="flex justify-center gap-5 mt-4 lg:mt-10 mb-24 lg:mb-56">
             <Image src={twitter} alt="" className="w-9 lg:w-auto"/>
             <Image src={insta} alt="" className="w-9 lg:w-auto"/>
             <Image src={fb} alt=""className="w-9 lg:w-auto" />
         </div>
-        <div className="mt-11 lg:mt-16">
-            <Image src={footerLogo} alt='' className="opacity-20"/>
+        <div className="mt-11 lg:mt-16 ">
+            <Image src={footerLogo} alt=''  className="opacity-60 md:w-[90%]  absolute left-5 md:left-16 lg:left-[8.33vw] bottom-10 lg:bottom-16"/>
         </div>
     </div>)
 }
