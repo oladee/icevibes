@@ -19,7 +19,7 @@ const Hero =  ()=>{
             One venue, one month, countless memories. Ice skating, arcade gaming, and live entertainment combined for all ages!
             </p>
             <div className="pb-[300px] md:pb-[300px] md:mt-14 mt-8 lg:pb-0">
-            <Link href='/' className="bg-[#EA9B0B] font-switzer lg:text-[1.11vw] text-white font-medium border-r-[6px] border-b-[6px] border-t border-l border-[#000] transition-all duration-300 hover:border-0 py-5 px-8 lg:px-8 rounded-lg">
+            <Link href='https://events.nairabox.com/event/6765640df3989d0668aa46d9' target="_blank" className="bg-[#EA9B0B] font-switzer lg:text-[1.11vw] text-white font-medium border-r-[6px] border-b-[6px] border-t border-l border-[#000] transition-all duration-300 hover:border-0 py-5 px-8 lg:px-8 rounded-lg">
             Grab your ticket now
             </Link>
             </div>

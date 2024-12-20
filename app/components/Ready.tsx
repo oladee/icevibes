@@ -13,7 +13,7 @@ const Ready = ()=>{
             }
         </div>
         <div className="mt-12 lg:mt-20 flex justify-center">
-            <Link href='' className='bg-[#7A33FF] font-switzer lg:text-[1.11vw] text-white font-medium border-r-[6px] border-b-[6px] border-t border-l border-[#000] transition-all duration-300 hover:border-0 py-4 px-4 lg:px-8 rounded-lg'>
+            <Link href='https://events.nairabox.com/event/6765640df3989d0668aa46d9' target="_blank" className='bg-[#7A33FF] font-switzer lg:text-[1.11vw] text-white font-medium border-r-[6px] border-b-[6px] border-t border-l border-[#000] transition-all duration-300 hover:border-0 py-4 px-4 lg:px-8 rounded-lg'>
             Grab your ticket now
             </Link>
         </div>
