@@ -1,6 +1,5 @@
 'use client'
 import Image from "next/image"
-import Link from "next/link"
 import twitter from '../assets/twitter.svg'
 import footerLogo from '../assets/footerlogo.svg'
 import insta from '../assets/insta.svg'
@@ -86,12 +85,9 @@ const Footer = ()=>{
             <hr className="border-[rgba(255,255,255,0.50)]" />
         </div>
         <div className="text-white flex flex-col lg:flex-row justify-center items-center gap-3  my-3">
-            <Link href=''>
-            About IceVibe
-            </Link>
-            Contact Us
-            <Link href=''>
-            </Link>
+            <h3>
+            Get in touch
+            </h3>
         </div>
         <div className="flex justify-center gap-5 mt-4 lg:mt-10 mb-24 lg:mb-56">
             <Image src={twitter} alt="" className="w-9 lg:w-auto"/>
