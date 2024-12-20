@@ -10,7 +10,7 @@ const Hero =  ()=>{
         <div className="md:py-8 lg:py-[120px] flex flex-col items-center lg:items-start">
             <div className="font-beachday text-[12.8vw] leading-[60px] lg:leading-normal md:text-[8vw] lg:text-[5.5vw] text-white">
                 <h3>
-                    SKATE.
+                    ICE SKATING.
                 </h3>
                 <h3>PARTY.</h3>
                 <h3>GAME.</h3>
@@ -25,12 +25,12 @@ const Hero =  ()=>{
             </div>
             
         </div>
-        <div className="fixed chat bottom-10 right-6 bg-white rounded-2xl z-50 p-4 ">
+        <Link href='http://Wa.me/2347049387897' target="_blank" className="fixed chat bottom-10 right-6 bg-white rounded-2xl z-50 p-4 ">
            <h1 className="font-switzer text-sm mb-2 lg:mb-4">
            Need help? chat with us
            </h1>
            <Image src={whatsapp} alt="icevibe chat" className="w-24 lg:w-auto" />
-        </div>
+        </Link>
     </div>)
 }
 
