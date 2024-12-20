@@ -45,8 +45,6 @@ const Footer = ()=>{
                     element?.pause()
                     setIsMuted(false)
                 }
-                
-                
             } ,
             onLeaveBack : ()=>{
                 if(!element?.paused){
@@ -75,7 +73,7 @@ const Footer = ()=>{
      })
     return(<div className='bg-[#000] py-16 px-5 lg:py-[120px] lg:px-[8.33vw] relative'>
         <div className="lg:px-20 relative">
-            <video preload="auto" ref={videoRef} playsInline className="lg:h-[501px] lg:w-[69.44vw] object-cover rounded-xl" loop autoPlay muted={true} src="/video.mp4">
+            <video ref={videoRef} playsInline loop autoPlay muted className="lg:h-[501px] lg:w-[69.44vw] object-cover rounded-xl"  src="/video.mp4">
                 Your browser does not support the video tag.
             </video>
             <div className="absolute bottom-0 right-0 lg:right-28 cursor-pointer">
