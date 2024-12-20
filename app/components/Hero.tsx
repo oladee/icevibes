@@ -1,8 +1,9 @@
 import Image from "next/image"
 import icevibelogo from '../assets/icelogo.svg'
 import Link from "next/link"
+import whatsapp from '../assets/whatsapp.svg'
 const Hero =  ()=>{
-    return(<div className="bg-[#7A33FF] bg-herobgmob bg-cover  lg:bg-herobg lg:bg-auto h-full bg-[100%_96%]  lg:bg-[0%_96%]  bg-no-repeat lg:px-[120px] lg:pb-96">
+    return(<div className="bg-[#7A33FF] bg-herobgmob bg-cover  lg:bg-herobg lg:bg-auto h-full bg-[100%_96%]  lg:bg-[0%_96%]  bg-no-repeat lg:px-[120px] lg:pb-96 relative">
         <div className="flex justify-center py-6 lg:py-8">
             <Image src={icevibelogo} alt=""  className="w-[71px] lg:w-[158px]"/>
         </div>
@@ -23,6 +24,12 @@ const Hero =  ()=>{
             </Link>
             </div>
             
+        </div>
+        <div className="fixed chat bottom-10 right-6 bg-white rounded-2xl z-50 p-4 ">
+           <h1 className="font-switzer text-sm mb-2 lg:mb-4">
+           Need help? chat with us
+           </h1>
+           <Image src={whatsapp} alt="icevibe chat" className="w-24 lg:w-auto" />
         </div>
     </div>)
 }
