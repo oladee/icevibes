@@ -26,7 +26,7 @@ const Location = ()=>{
                     WHEN?
                 </h4>
                 <p className="font-switzer text-sm lg:text-2xl font-semibold">
-                DEC 15 , 2024 - JAN 15, 2024
+                DEC 20, 2024 - JAN 20, 2024
                 </p>
             </div>
         </div>
