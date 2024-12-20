@@ -100,7 +100,7 @@ const Footer = ()=>{
             <Image src={fb} alt=""className="w-9 lg:w-auto" />
         </div>
         <div className="mt-11 lg:mt-16 ">
-            <Image src={footerLogo} alt=''  className="opacity-60 w-[90%] md:w-[90%]  absolute left-8 md:left-16 lg:left-[8.33vw] bottom-10 lg:bottom-16"/>
+            <Image src={footerLogo} alt=''  className="opacity-60 w-[90%] md:w-[85%] lg:w-[85%]  absolute left-8 md:left-20 lg:left-[9.33vw] bottom-10 md:bottom-8 lg:bottom-14"/>
         </div>
     </div>)
 }

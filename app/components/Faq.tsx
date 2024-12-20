@@ -48,7 +48,7 @@ const Faq = ()=>{
 export const Accordion = ({question, answer, idx, setAccordIdx, currentAccord, handleToggleAccord}: {question : string, answer : string, idx : number, currentAccord : number | null, setAccordIdx : (item : number)=>void, handleToggleAccord : (item : number | null)=>void})=>{
     const handleclick = ()=>{
         if(currentAccord == idx){
-            setAccordIdx(-1)
+            setAccordIdx(0)
             handleToggleAccord(-1)
             return
         }
