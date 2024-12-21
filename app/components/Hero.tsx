@@ -15,11 +15,6 @@ const Hero =  ()=>{
                 <h3>PARTY.</h3>
                 <h3>GAME.</h3>
             </div>
-            <div>
-                <video autoPlay muted disablePictureInPicture loop playsInline className="w-[157px] h-[279px] md:w-[30vw] lg:w-[15.87vw] lg:h-[28.3vw] object-cover absolute z-10 top-24 lg:top-16 left-4 md:left-16 lg:left-[-30px] lg:right-0 rounded-[10px]" >
-                <source src="/assets/jiggy.mp4"  type="video/mp4" />
-                </video>
-            </div>
             <p className="font-switzer text-sm md:text-2xl lg:leading-7 w-[77.56vw] md:w-[57.56vw] lg:w-[27.56vw] lg:text-[1.388vw] text-white mt-4 md:mt-8 lg:mt-3 lg:mb-3 text-center lg:text-start">
             One venue, one month, countless memories. Ice skating, arcade gaming, and live entertainment combined for all ages!
             </p>
