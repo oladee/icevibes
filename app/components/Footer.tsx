@@ -44,13 +44,11 @@ const Footer = ()=>{
             onLeave : ()=>{
                 if(!element?.paused){
                     element?.pause()
-                    setIsMuted(false)
                 }
             } ,
             onLeaveBack : ()=>{
                 if(!element?.paused){
                     element?.pause()
-                    setIsMuted(false)
                 }
             } ,
         });
@@ -60,12 +58,10 @@ const Footer = ()=>{
             start: 'bottom 70%',
             onEnter: ()=>{
                 element?.play()
-                setIsMuted(true)
             },
             
             onEnterBack : ()=>{
                 element?.play()
-                setIsMuted(true)
             } 
             
           });
