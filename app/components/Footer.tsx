@@ -74,12 +74,12 @@ const Footer = ()=>{
      })
     return(<div className='bg-[#000] py-16 px-5 lg:py-[120px] lg:px-[8.33vw] relative'>
         <div className="lg:px-20 w-full relative">
-            <video ref={videoRef} autoPlay muted disablePictureInPicture loop playsInline className="lg:h-[501px] lg:w-[69.44vw] object-cover rounded-xl"  >
-            <source src="/video.mp4" type="video/mp4" />
+            <video ref={videoRef} autoPlay muted disablePictureInPicture loop playsInline className="lg:h-[501px] lg:w-[69.44vw] object-cover rounded-xl">
+                <source src="/video.mp4" type="video/mp4" />
             </video>
 
             <div>
-                <video autoPlay muted disablePictureInPicture loop playsInline className="w-[157px] h-[279px] md:w-[30vw] lg:w-[15.87vw] lg:h-[28.3vw] object-cover absolute z-10 top-24 lg:top-16 left-4 md:left-16 lg:left-[-30px] lg:right-0 rounded-[10px]" >
+                <video autoPlay muted disablePictureInPicture loop playsInline={true} webkit-playsinline className="w-[157px] h-[279px] md:w-[30vw] lg:w-[15.87vw] lg:h-[28.3vw] object-cover absolute z-10 top-24 lg:top-16 left-4 md:left-16 lg:left-[-30px] lg:right-0 rounded-[10px]" >
                 <source src="/assets/jiggy.mp4"  type="video/mp4" />
                 </video>
             </div>
