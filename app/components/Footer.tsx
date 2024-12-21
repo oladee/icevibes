@@ -79,7 +79,7 @@ const Footer = ()=>{
             </video>
 
             <div>
-                <video autoPlay muted disablePictureInPicture loop playsInline={true} webkit-playsinline className="w-[157px] h-[279px] md:w-[30vw] lg:w-[15.87vw] lg:h-[28.3vw] object-cover absolute z-10 top-24 lg:top-16 left-4 md:left-16 lg:left-[-30px] lg:right-0 rounded-[10px]" >
+                <video autoPlay muted disablePictureInPicture loop playsInline={true} webkit-playsinline width={320} height={320} className="w-[157px] h-[279px] md:w-[30vw] lg:w-[15.87vw] lg:h-[28.3vw] object-cover absolute z-10 top-24 lg:top-16 left-4 md:left-16 lg:left-[-30px] lg:right-0 rounded-[10px]" >
                 <source src="/assets/jiggy.mp4"  type="video/mp4" />
                 </video>
             </div>
