@@ -73,7 +73,7 @@ const Footer = ()=>{
 
      })
     return(<div className='bg-[#000] py-16 px-5 lg:py-[120px] lg:px-[8.33vw] relative'>
-        <div className="lg:px-20 relative">
+        <div className="lg:px-20 w-full relative">
             <video ref={videoRef} autoPlay muted disablePictureInPicture loop playsInline className="lg:h-[501px] lg:w-[69.44vw] object-cover rounded-xl"  >
             <source src="/video.mp4" type="video/mp4" />
             </video>
