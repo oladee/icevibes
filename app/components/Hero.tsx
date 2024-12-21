@@ -8,7 +8,7 @@ const Hero =  ()=>{
             <Image src={icevibelogo} alt=""  className="w-[71px] lg:w-[158px]"/>
         </div>
         <div className="md:py-8 lg:py-[120px] flex flex-col items-center lg:items-start">
-            <div className="font-beachday text-[12.8vw] leading-[60px] lg:leading-normal md:text-[8vw] lg:text-[5.5vw] text-white">
+            <div className="font-beachday text-[12.8vw] leading-[60px] lg:leading-normal md:text-[8vw] lg:text-[5.5vw] text-white text-center lg:text-start">
                 <h3>
                     ICE SKATING.
                 </h3>

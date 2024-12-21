@@ -10,6 +10,8 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import speakerlow from '../assets/speakerLow.svg'
 import speakerhigh from '../assets/speakerhigh.svg'
+import waFooter from '../assets/footer_whatsapp-icon.svg'
+import Link from "next/link"
 
 
 gsap.registerPlugin(useGSAP);
@@ -90,9 +92,20 @@ const Footer = ()=>{
             </h3>
         </div>
         <div className="flex justify-center gap-5 mt-4 lg:mt-10 mb-24 lg:mb-56">
+            <Link href='https://x.com/icevibeslagos?s=21' target="_blank">
             <Image src={twitter} alt="" className="w-9 lg:w-auto"/>
+            </Link>
+            <Link href='https://www.instagram.com/icevibeslagos?igsh=OGN5Z3p4dWtheTBw' target="_blank">
             <Image src={insta} alt="" className="w-9 lg:w-auto"/>
-            <Image src={fb} alt=""className="w-9 lg:w-auto" />
+            </Link>
+            <Link href='https://www.facebook.com/share/18MKwh1rUL/?mibextid=kFxxJD' target="_blank">
+                <Image src={fb} alt=""className="w-9 lg:w-auto" />
+            </Link>
+            <Link href='http://Wa.me/2347049387897' target="_blank">
+                <Image src={waFooter} alt=""className="w-9 lg:w-auto" />
+            </Link>
+            
+            
         </div>
         <div className="mt-11 lg:mt-16 ">
             <Image src={footerLogo} alt=''  className="opacity-60 w-[90%] md:w-[85%] lg:w-[85%]  absolute left-8 md:left-20 lg:left-[9.33vw] bottom-10 md:bottom-8 lg:bottom-14"/>
