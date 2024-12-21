@@ -6,7 +6,6 @@ import insta from '../assets/insta.svg'
 import fb from '../assets/fb.svg'
 import { useEffect, useRef, useState } from "react"
 import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import speakerlow from '../assets/speakerLow.svg'
 import speakerhigh from '../assets/speakerhigh.svg'
