@@ -74,10 +74,13 @@ const Footer = ()=>{
      })
     return(<div className='bg-[#000] py-16 px-5 lg:py-[120px] lg:px-[8.33vw] relative'>
         <div className="lg:px-20 relative">
-            <video ref={videoRef} playsInline loop autoPlay muted className="lg:h-[501px] lg:w-[69.44vw] object-cover rounded-xl"  >
+            <video ref={videoRef} autoPlay muted disablePictureInPicture loop playsInline className="lg:h-[501px] lg:w-[69.44vw] object-cover rounded-xl"  >
             <source src="/video.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
             </video>
+            <video autoPlay muted disablePictureInPicture loop playsInline className="w-[157px] h-[279px] md:w-[30vw] lg:w-[15.87vw] lg:h-[28.3vw] object-cover absolute z-10 top-24 lg:top-16 left-4 md:left-16 lg:left-[-30px] lg:right-0 rounded-[10px]" >
+            <source src="/jiggy.mp4"  type="video/mp4" />
+        </video>
+
             <div className="absolute bottom-0 right-0 lg:right-28 cursor-pointer">
                 <Image src={isMuted ? speakerhigh : speakerlow} alt="" onClick={toggleMute} className="w-12 lg:w-auto"/>
             </div>
@@ -104,8 +107,6 @@ const Footer = ()=>{
             <Link href='http://Wa.me/2347049387897' target="_blank">
                 <Image src={waFooter} alt=""className="w-9 lg:w-auto" />
             </Link>
-            
-            
         </div>
         <div className="mt-11 lg:mt-16 ">
             <Image src={footerLogo} alt=''  className="opacity-60 w-[90%] md:w-[85%] lg:w-[85%]  absolute left-8 md:left-20 lg:left-[9.33vw] bottom-10 md:bottom-8 lg:bottom-14"/>
