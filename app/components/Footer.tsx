@@ -12,6 +12,7 @@ import speakerlow from '../assets/speakerLow.svg'
 import speakerhigh from '../assets/speakerhigh.svg'
 import waFooter from '../assets/footer_whatsapp-icon.svg'
 import Link from "next/link"
+import guyskate from '../assets/guyskate.svg'
 
 
 gsap.registerPlugin(useGSAP);
@@ -87,7 +88,7 @@ const Footer = ()=>{
             Get in touch
             </h3>
         </div>
-        <div className="flex justify-center gap-5 mt-4 lg:mt-10 mb-24 lg:mb-56">
+        <div className="flex justify-center gap-5 mt-4 lg:mt-10">
             <Link href='https://x.com/icevibeslagos?s=21' target="_blank">
             <Image src={twitter} alt="" className="w-9 lg:w-auto"/>
             </Link>
@@ -101,8 +102,14 @@ const Footer = ()=>{
                 <Image src={waFooter} alt=""className="w-9 lg:w-auto" />
             </Link>
         </div>
-        <div className="mt-11 lg:mt-16 ">
-            <Image src={footerLogo} alt=''  className="opacity-60 w-[90%] md:w-[85%] lg:w-[85%]  absolute left-8 md:left-20 lg:left-[9.33vw] bottom-10 md:bottom-8 lg:bottom-14"/>
+        <div className="flex justify-center w-full mt-10">
+            <Link href='/image_rights_usage.pdf' download='/image_rights_usage.pdf' className="text-white z-50 opacity-75">
+              Disclaimer(Image_Rights)
+            </Link>
+        </div>
+        <div className="mt-11 lg:mt-16 flex justify-center relative">
+            <Image src={guyskate} alt="" className="absolute -top-10 lg:top-[-280px] -right-5 md:right-0 lg:-right-[105px] w-20 md:w-32 lg:w-auto"/>
+            <Image src={footerLogo} alt=''  className="opacity-60 w-[90%] md:w-[85%] z-0 lg:w-[85%]  "/>
         </div>
     </div>)
 }
