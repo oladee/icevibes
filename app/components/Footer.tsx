@@ -104,7 +104,7 @@ const Footer = ()=>{
         </div>
         <div className="flex justify-center w-full mt-10">
             <Link href='/image_rights_usage.pdf' download='/image_rights_usage.pdf' className="text-white z-50 opacity-75">
-              Disclaimer(Image_Rights)
+              Disclaimer(Image Rights)
             </Link>
         </div>
         <div className="mt-11 lg:mt-16 flex justify-center relative">
