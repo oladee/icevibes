@@ -1,6 +1,7 @@
 {
   "name": "icevibes",
   "version": "0.1.0",
+  "homepage": "https://theicevibes.com",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -11,6 +12,7 @@
   "dependencies": {
     "@gsap/react": "^2.1.1",
     "clsx": "^2.1.1",
+    "firebase": "^11.1.0",
     "next": "15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

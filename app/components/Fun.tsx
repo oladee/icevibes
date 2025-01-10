@@ -1,8 +1,5 @@
 'use client'
 import Image from "next/image"
-import fun1 from "../assets/fun1.jpg"
-import fun2 from "../assets/fun2.jpg"
-import fun3 from '../assets/fun3.jpg'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay} from "swiper/modules";
 import "swiper/css";
@@ -51,17 +48,17 @@ const Fun = () => {
         >
           <SwiperSlide>
             <div>
-              <Image src={fun3} alt="" className="h-[276px] lg:h-[500px] object-center object-cover rounded-md"/>
+              <Image src="/fun3.jpg" alt="image" className="h-[276px] lg:h-[500px] object-center object-cover rounded-md"/>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-            <Image src={fun1} alt="" className="h-[276px] lg:h-[500px] object-center object-cover rounded-md"/>
+            <Image src="/fun1.jpg" alt="image" className="h-[276px] lg:h-[500px] object-center object-cover rounded-md"/>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <Image src={fun2} alt="" className="h-[276px] lg:h-[500px] object-center object-cover rounded-md"/>
+              <Image src="/fun2.jpg" alt="" className="h-[276px] lg:h-[500px] object-center object-cover rounded-md"/>
             </div>
           </SwiperSlide>
         </Swiper>
